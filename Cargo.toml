@@ -1,23 +1,22 @@
 [package]
-name = "leveldb-sys"
-version = "2.0.9"
-authors = ["Andrew Dunham <andrew@du.nham.ca>", "Florian Gilcher <florian.gilcher@asquera.de>"]
-
+name = "cruzbit-leveldb-sys"
+version = "1.0.0"
+authors = ["Christian Smith <christian@dhp.com"]
+edition = "2021"
+rust-version = "1.57.0"
+readme = "README.md"
 description = "FFI bindings to LevelDB"
-repository = "https://github.com/skade/leveldb-sys"
-documentation = "https://docs.rs/leveldb-sys/"
+repository = "https://github.com/christian-smith/cruzbit-leveldb-sys"
 license = "MIT"
-
-build = "src/build.rs"
 links = "leveldb"
 
 [features]
 snappy = []
 
 [dependencies]
-libc = "0.2.*"
-ffi-opaque = "2"
+libc = "0.2"
+ffi-opaque = "2.0"
 
 [build-dependencies]
 cmake = "0.1"
-num_cpus = "1.10"
+num_cpus = "1.16"
