@@ -4,10 +4,10 @@ use std::{
 };
 
 #[cfg(feature = "snappy")]
-const SNAPPY_VERSION: &'static str = "1.1.10";
-const LEVELDB_VERSION: &'static str = "1.23";
+const SNAPPY_VERSION: &str = "1.1.10";
+const LEVELDB_VERSION: &str = "1.23";
 /// Directory name within `$OUT_DIR` where the static libraries should be built.
-const LIBDIR: &'static str = "lib";
+const LIBDIR: &str = "lib";
 
 #[cfg(feature = "snappy")]
 fn build_snappy() -> PathBuf {
