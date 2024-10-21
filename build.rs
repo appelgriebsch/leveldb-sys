@@ -4,7 +4,7 @@ use std::{
 };
 
 #[cfg(feature = "snappy")]
-const SNAPPY_VERSION: &str = "1.1.10";
+const SNAPPY_VERSION: &str = "1.2.1";
 const LEVELDB_VERSION: &str = "1.23";
 /// Directory name within `$OUT_DIR` where the static libraries should be built.
 const LIBDIR: &str = "lib";
@@ -21,6 +21,7 @@ fn build_snappy() -> PathBuf {
         cmake::Config::new(Path::new("deps").join(format!("snappy-{}", SNAPPY_VERSION)))
             .define("BUILD_SHARED_LIBS", "OFF")
             .define("SNAPPY_BUILD_TESTS", "OFF")
+            .define("SNAPPY_BUILD_BENCHMARKS", "OFF")
             .define("HAVE_LIBZ", "OFF")
             .define("CMAKE_INSTALL_LIBDIR", &libdir)
             .build();

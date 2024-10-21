@@ -1,12 +1,12 @@
 [package]
-name = "cruzbit-leveldb-sys"
-version = "1.0.0"
-authors = ["Christian Smith <christian@dhp.com"]
+name = "leveldb-sys"
+version = "1.0.1"
+authors = ["Andreas Gerlach <andi@appelgriebsch.com>"]
 edition = "2021"
 rust-version = "1.57.0"
 readme = "README.md"
 description = "FFI bindings to LevelDB"
-repository = "https://github.com/christian-smith/cruzbit-leveldb-sys"
+repository = "https://github.com/appelgriebsch/leveldb-sys"
 license = "MIT"
 links = "leveldb"
 

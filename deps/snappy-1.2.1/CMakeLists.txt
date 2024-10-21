@@ -27,7 +27,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 cmake_minimum_required(VERSION 3.1)
-project(Snappy VERSION 1.1.10 LANGUAGES C CXX)
+project(Snappy VERSION 1.2.1 LANGUAGES C CXX)
 
 # C++ standard can be overridden when this is used as a sub-project.
 if(NOT CMAKE_CXX_STANDARD)
@@ -93,7 +93,7 @@ option(BUILD_SHARED_LIBS "Build shared libraries(DLLs)." OFF)
 
 option(SNAPPY_BUILD_TESTS "Build Snappy's own tests." ON)
 
-option(SNAPPY_BUILD_BENCHMARKS "Build Snappy's benchmarks" OFF)
+option(SNAPPY_BUILD_BENCHMARKS "Build Snappy's benchmarks" ON)
 
 option(SNAPPY_FUZZING_BUILD "Build Snappy for fuzzing." OFF)
 
