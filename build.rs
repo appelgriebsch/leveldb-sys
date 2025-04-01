@@ -4,7 +4,7 @@ use std::{
 };
 
 #[cfg(feature = "snappy")]
-const SNAPPY_VERSION: &str = "1.2.1";
+const SNAPPY_VERSION: &str = "1.2.2";
 const LEVELDB_VERSION: &str = "1.23";
 /// Directory name within `$OUT_DIR` where the static libraries should be built.
 const LIBDIR: &str = "lib";
